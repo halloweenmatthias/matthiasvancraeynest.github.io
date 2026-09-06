@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <link rel="icon" href="https://www.imj-prg.fr/favicon.ico">
+    <title>Juan Ramón Gómez García</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+        }
+        
+        div.page { 
+            padding-top: 60px; 
+        }
+        
+        @media (min-width: 768px) { 
+            .container { width: 768px; }
+        }
+        
+        h1, h2, h3, h4 { 
+            margin-top: 30px;
+            font-weight: 700;
+        }
+        
+        h4 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        /* Estilos generales heredados */
+        div.software { margin-left: 5px; }
+        div.software p { margin-left: 10px; }
+        table th { display: none; }
+        table tr:first-child td { border: none; }
+        table td:first-child { font-weight: 700; white-space: nowrap; }
+        
+        img { max-width: 100%; height: auto; }
+        img[src*='#center'] { display: block; margin: auto; }
+        img[src*='#border'] { border: 1px solid #ddd; }
+        
+        div.pub-list ol { list-style-type: none; padding-left: 0; }
+        div.pub-list li:before { counter-increment: pub-counter -1; content: counter(pub-counter, upper-roman) ". "; font-weight: 700; display: inline-block; width: 30px; margin-left: -30px; }
+        div.pub-list li { padding: 8px; padding-left: 38px; border-top: 1px solid #ddd; }
+        div.pub-list li:first-child { border: none; }
+        
+        ul.post-list { list-style-type: none; padding-left: 10px; }
+        span.date { display: inline-block; width: 85px; }
+        .glyphicon { line-height: inherit; }
+        .label { padding: .3em .6em .1em; }
+        div.two-col ul { columns: 2; }
+        a code { color: inherit; background-color: inherit; padding: 0; }
+        
+        /* --- Estilos específicos de Research --- */
+        
+        .secondary-text {
+            padding-left: 20px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .talk-description {
+            padding-left: 40px;
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .year-separator {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            color: #333;
+            overflow: hidden; 
+        }
+        
+        /* Imagen flotante */
+        .img-right {
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            max-width: 40%;
+        }
+        
+        /* Estilo para la lista de papers */
+        .paper-list {
+            padding-left: 20px;
+            list-style-type: square;
+        }
+        .paper-list li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background: rgb(242, 202, 100); border: none;"> 
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: black;"><i class="bi bi-house-door"></i></a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="teaching.html" style="color: black;">Teaching</a></li>
+                    <li><a href="research.html" style="background-color: rgb(185, 143, 3); color: black;">Research</a></li>
+                    <li><a href="cv.html" style="color: black;">CV</a></li>
+                    <li><a href="other.html" style="color: black;">Beyond Math</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="container clearfix">
+            <img alt="pic" src="bitmap.png" class="img-right" />
+            
+            <h3 class="year-separator">Preprints and publications</h3>
+            <h4>In progress</h4>
+            <ul class="paper-list">
+                <li><b>Line defects in skein theory and quantum cluster charts</b>, with <a href="https://jmhbrown.github.io">Jennifer Brown</a>, <a href="https://webhomes.maths.ed.ac.uk/~djordan/">David Jordan</a> and <a href="https://scholar.google.com/citations?user=uZK4lh0AAAAJ&hl=nl">Matthias Vancraeynes</a> <b>(email me if you want a draft!)</b></li>
+            </ul>
+
+            <h4>Preprints</h4>
+            <ul class="paper-list">
+                <li>
+                    <b>HOMFLY parabolic restriction, defect skein theory and the Turaev coproduct.</b> <a href="https://arxiv.org/abs/2601.03196">[arXiv:2601.03196]</a>
+                </li>
+            </ul>
+            
+            <h3 class="year-separator">Talks</h3>
+
+            <p class="secondary-text"><b>2025-2026</b> <a href="https://btw.pages.math.cnrs.fr/BTW6/btw6.html"> Topology between the Waves</a> - Fréjus</p>
+            <p class="talk-description"> Monoidal, rigid and pivotal categories.</p>
+
+            <p class="secondary-text"><b>2025-2026</b> Seminario de Investigación del departamento de Matemática Aplicada</a> - Universidad Politénica de Madrid</p>
+            <p class="talk-description"> Introducción a la teoría skein.</p>
+
+            <p class="secondary-text"><b>2025-2026</b> <a href="https://www.math.uni-hamburg.de/home/runkel/ws25-fose.html"> Research Seminar Algebra and Mathematical Physics</a> - University of Hamburg</p>
+            <p class="talk-description"> Defect skein theory, parabolic restriction and the Turaev coproduct.</p>
+
+            <p class="secondary-text"><b>2025-2026</b> <a href="https://tqft.math.tecnico.ulisboa.pt/seminars?id=7734"> TQFT online seminar</a> - <a href="https://tqft.math.tecnico.ulisboa.pt">Topological Quantum Field Theory Club</a></p>
+            <p class="talk-description"> Defect skein theory, parabolic restriction and the Turaev coproduct.</p>
+            
+            <p class="secondary-text"><b>2024-2025</b> <a href="https://sites.google.com/view/rencontres-doctorants-rtop2025/accueil"> Journées de rencontre des doctorants du Résean Thématique RT2171</a> - Université de Picardie Jules Verne</p>
+            <p class="talk-description"> Skein theory, parabolic restriction and Turaev coproduct.</p>
+
+            <p class="secondary-text"><b>2024-2025</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
+            <p class="talk-description"> Morse theory and classification of surfaces.</p>
+
+            <p class="secondary-text"><b>2024-2025</b> <a href="https://abrochier.org/jdtq"> Quantum Topology days</a> - Université Bourgogne-Europe</p>
+            <p class="talk-description"> Turaev's coproduct and parabolic restriction.</p>
+
+            <p class="secondary-text"><b>2024-2025</b> Working group on <a href="https://idrissi.eu/misc/spec"> Balmer Spectrum</a> - Université Paris Cité</p>
+            <p class="talk-description"> Introduction to infinity categories.</p>
+            
+            <p class="secondary-text"><b>2024-2025</b> <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/53"> IMJ-PRG PhD seminar</a> - Sorbonne Université</p>
+            <p class="talk-description"> Skein categories and factorisation homology.</p>
+
+            <p class="secondary-text"><b>2023-2024</b> Annual meeting of the Groups, Geometry, and Representations team at IMJ-PRG - Université Paris Cité</p>
+            <p class="talk-description">Coproduit de Turaev et catégories skein.</p>
+
+            <p class="secondary-text"><b>2023-2024</b> Working group on <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/101">Cohomology of Torelli groups</a> - Université Paris Cité</p>
+            <p class="talk-description">Introduction to spectral sequences (<a href="spectral_sequences.pdf">notes</a>).</p>
+
+            <p class="secondary-text"><b>2023-2024</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
+            <p class="talk-description"> Introduction to TQFTs.</p>
+
+            <p class="secondary-text"><b>2022-2023</b> Working group on <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/93">Hecke algebras, categories and braided monoidal 2-categories</a> - Université Paris Cité</p>
+            <p class="talk-description"> Soergel bimodules (<a href="soergel.pdf">notes</a>) and their diagrammatics (<a href="diagrammatics.pdf">slides</a>).</p>
+            
+            <p class="secondary-text"><b>2022-2023</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
+            <p class="talk-description"> Quantum invariants of knots.</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

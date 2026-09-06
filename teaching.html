@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Juan Ramón Gómez García">
+    <link rel="icon" href="https://www.imj-prg.fr/favicon.ico">
+    <title>Juan Ramón Gómez García</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+        }
+        
+        div.page { 
+            padding-top: 60px; 
+        }
+        
+        @media (min-width: 768px) { 
+            .container { width: 768px; }
+        }
+        
+        h1, h2, h3, h4 { 
+            margin-top: 30px;
+            font-weight: 700;
+        }
+
+        /* Estilos generales heredados */
+        div.software { margin-left: 5px; }
+        div.software p { margin-left: 10px; }
+        table th { display: none; }
+        table tr:first-child td { border: none; }
+        table td:first-child { font-weight: 700; white-space: nowrap; }
+        
+        img { max-width: 88%; height: auto; }
+        img[src*='#center'] { display: block; margin: auto; }
+        img[src*='#border'] { border: 1px solid #ddd; }
+        
+        div.pub-list ol { list-style-type: none; padding-left: 0; }
+        div.pub-list li:before { counter-increment: pub-counter -1; content: counter(pub-counter, upper-roman) ". "; font-weight: 700; display: inline-block; width: 30px; margin-left: -30px; }
+        div.pub-list li { padding: 8px; padding-left: 38px; border-top: 1px solid #ddd; }
+        div.pub-list li:first-child { border: none; }
+        
+        ul.post-list { list-style-type: none; padding-left: 10px; }
+        span.date { display: inline-block; width: 85px; }
+        .glyphicon { line-height: inherit; }
+        .label { padding: .3em .6em .1em; }
+        div.two-col ul { columns: 2; }
+        a code { color: inherit; background-color: inherit; padding: 0; }
+        
+        /* --- Estilos unificados --- */
+        
+        .secondary-text {
+            padding-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+        .year-separator {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+            overflow: hidden;
+        }
+        
+        /* Botón personalizado para mantener la estética */
+        .btn-custom {
+            background-color: rgb(242, 202, 100);
+            color: black;
+            border: none;
+            font-weight: 700;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .btn-custom:hover {
+            background-color: rgb(220, 180, 80);
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background: rgb(242, 202, 100); border: none;"> 
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html" style="color: black;"><i class="bi bi-house-door"></i></a>
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="teaching.html" style="background-color: rgb(185, 143, 3); color: black;">Teaching</a></li>
+                    <li><a href="research.html" style="color: black;">Research</a></li>
+                    <li><a href="cv.html" style="color: black;">CV</a></li>
+                    <li><a href="other.html" style="color: black;">Beyond Math</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="container">
+            
+            <h3 class="year-separator">2025/2026 - Université Paris-Cité</h3>
+            <p class="secondary-text">Groupes et actions de groupes (TD)</p>
+            <p class="secondary-text">Algèbre et analyse Fondamentales II (TD)</p>
+
+            <button class="btn btn-custom" type="button" data-toggle="collapse" data-target="#past-teaching" aria-expanded="false" aria-controls="past-teaching">
+                Past teaching
+            </button>
+            
+            <div class="collapse" id="past-teaching">
+                <h3 class="year-separator">2024/2025 - Université Paris-Cité</h3>
+                <p class="secondary-text">Mathématiques pour l'ingénieur (TD)</p>
+                <p class="secondary-text">Mathématiques pour les biologistes (TD)</p>
+                <p class="secondary-text">Mathématiques et applications au vivant (TD)</p>
+
+                <h3 class="year-separator">2023/2024 - Université Paris-Cité</h3>
+                <p class="secondary-text">Éléments d'analyse et d'algèbre élémentaires (TD)</p>
+                <p class="secondary-text">Interactions mathématiques-physique (cours/TD)</p>
+                <p class="secondary-text">Mathématiques et applications au vivant (TD)</p>
+
+                <h3 class="year-separator">2022/2023 - Université Paris-Cité</h3>
+                <p class="secondary-text">Analyse numérique matricielle (TD)</p>
+                <p class="secondary-text">Mini-projet de mathématiques</p>
+
+                <h3 class="year-separator">2019/2020 - Universidad Europea de Madrid</h3>
+                <p class="secondary-text">Modelos matemáticos</p>
+                <p class="secondary-text">Cálculo numérico computacional</p>
+            </div>
+
+            <div style="margin-top: 40px; text-align: center;">
+                <img alt="pic" src="teaching.jpeg" />
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
