@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Weyl defect in a disc">
+  <defs>
+    <clipPath id="disc">
+      <circle cx="32" cy="32" r="29"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#disc)">
+    <!-- T-region -->
+    <circle cx="32" cy="32" r="29" fill="#E88444"/>
+
+    <!-- G-regions: two lenses bulging in from left and right -->
+    <path d="M 3 17.5 C 32 17.5, 32 46.5, 3 46.5 Z" fill="#9BBBD6"/>
+    <path d="M 61 17.5 C 32 17.5, 32 46.5, 61 46.5 Z" fill="#9BBBD6"/>
+
+    <!-- parabolic defects -->
+    <path d="M 3 17.5 C 32 17.5, 32 46.5, 3 46.5" fill="none" stroke="#77CCAA" stroke-width="3"/>
+    <path d="M 61 17.5 C 32 17.5, 32 46.5, 61 46.5" fill="none" stroke="#77CCAA" stroke-width="3"/>
+
+    <!-- Weyl defect -->
+    <line x1="24.75" y1="32" x2="39.25" y2="32" stroke="#888811" stroke-width="3.4"/>
+
+    <!-- junctions -->
+    <circle cx="24.75" cy="32" r="2.9" fill="#111111"/>
+    <circle cx="39.25" cy="32" r="2.9" fill="#111111"/>
+  </g>
+
+  <circle cx="32" cy="32" r="29" fill="none" stroke="#111111" stroke-width="2.6"/>
+</svg>
