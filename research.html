@@ -1,123 +1,34 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <link rel="icon" href="https://www.imj-prg.fr/favicon.ico">
-    <title>Juan Ramón Gómez García</title>
-    
+    <meta name="author" content="Matthias Vancraeynest">
+    <title>Research | Matthias Vancraeynest</title>
+    <meta name="description" content="Preprints and publications of Matthias Vancraeynest on quantum topology, skein theory and quantum algebra.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Research | Matthias Vancraeynest">
+    <meta property="og:description" content="Preprints and publications on quantum topology, skein theory and quantum algebra.">
+    <meta property="og:url" content="https://matthiasvancraeynest.github.io/research.html">
+    <meta property="og:image" content="https://matthiasvancraeynest.github.io/foto.jpeg">
+    <meta name="twitter:card" content="summary">
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+
     
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-        }
-        
-        div.page { 
-            padding-top: 60px; 
-        }
-        
-        @media (min-width: 768px) { 
-            .container { width: 768px; }
-        }
-        
-        h1, h2, h3, h4 { 
-            margin-top: 30px;
-            font-weight: 700;
-        }
-        
-        h4 {
-            font-size: 1.2em;
-            margin-bottom: 15px;
-            color: #444;
-        }
 
-        /* Estilos generales heredados */
-        div.software { margin-left: 5px; }
-        div.software p { margin-left: 10px; }
-        table th { display: none; }
-        table tr:first-child td { border: none; }
-        table td:first-child { font-weight: 700; white-space: nowrap; }
-        
-        img { max-width: 100%; height: auto; }
-        img[src*='#center'] { display: block; margin: auto; }
-        img[src*='#border'] { border: 1px solid #ddd; }
-        
-        div.pub-list ol { list-style-type: none; padding-left: 0; }
-        div.pub-list li:before { counter-increment: pub-counter -1; content: counter(pub-counter, upper-roman) ". "; font-weight: 700; display: inline-block; width: 30px; margin-left: -30px; }
-        div.pub-list li { padding: 8px; padding-left: 38px; border-top: 1px solid #ddd; }
-        div.pub-list li:first-child { border: none; }
-        
-        ul.post-list { list-style-type: none; padding-left: 10px; }
-        span.date { display: inline-block; width: 85px; }
-        .glyphicon { line-height: inherit; }
-        .label { padding: .3em .6em .1em; }
-        div.two-col ul { columns: 2; }
-        a code { color: inherit; background-color: inherit; padding: 0; }
-        
-        /* --- Estilos específicos de Research --- */
-        
-        .secondary-text {
-            padding-left: 20px;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-        
-        .talk-description {
-            padding-left: 40px;
-            font-size: 15px;
-            color: #666;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
-        
-        .year-separator {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-            margin-bottom: 25px;
-            color: #333;
-            overflow: hidden; 
-        }
-        
-        /* Imagen flotante */
-        .img-right {
-            float: right;
-            margin-left: 20px;
-            margin-bottom: 20px;
-            max-width: 40%;
-        }
-        
-        /* Estilo para la lista de papers */
-        .paper-list {
-            padding-left: 20px;
-            list-style-type: square;
-        }
-        .paper-list li {
-            margin-bottom: 10px;
-            line-height: 1.5;
-        }
-        
-        .clearfix::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background: rgb(242, 202, 100); border: none;"> 
+    <nav class="navbar navbar-inverse navbar-fixed-top site-navbar"
+     aria-label="Main navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html" style="color: black;"><i class="bi bi-house-door"></i></a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -126,79 +37,169 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="teaching.html" style="color: black;">Teaching</a></li>
-                    <li><a href="research.html" style="background-color: rgb(185, 143, 3); color: black;">Research</a></li>
-                    <li><a href="cv.html" style="color: black;">CV</a></li>
-                    <li><a href="other.html" style="color: black;">Beyond Math</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                </ul>
+    <li class="active">
+        <a href="research.html" aria-current="page">Research</a>
+    </li>
+
+    <li>
+        <a href="talks.html">Talks</a>
+    </li>
+
+    <li>
+        <a href="teaching.html">Teaching</a>
+    </li>
+
+    <li>
+        <a href="cv.html">CV</a>
+    </li>
+
+</ul>
             </div>
         </div>
     </nav>
-    <div class="page">
-        <div class="container clearfix">
-            <img alt="pic" src="bitmap.png" class="img-right" />
-            
-            <h3 class="year-separator">Preprints and publications</h3>
-            <h4>In progress</h4>
-            <ul class="paper-list">
-                <li><b>Line defects in skein theory and quantum cluster charts</b>, with <a href="https://jmhbrown.github.io">Jennifer Brown</a>, <a href="https://webhomes.maths.ed.ac.uk/~djordan/">David Jordan</a> and <a href="https://scholar.google.com/citations?user=uZK4lh0AAAAJ&hl=nl">Matthias Vancraeynes</a> <b>(email me if you want a draft!)</b></li>
-            </ul>
 
-            <h4>Preprints</h4>
+   <main class="page research-page">
+    <div class="container">
+
+        <h1 class="page-title">Research</h1>
+
+        <section aria-labelledby="preprints-heading">
+            <h2 id="preprints-heading" class="year-separator">
+                Preprints
+            </h2>
+
+            <ul class="paper-list">
+                        <li>
+            <a href="https://arxiv.org/abs/2609.09308"
+            target="_blank"
+            rel="noopener noreferrer">
+                Weyl defects in skein theory and quantum cluster charts
+            </a> (2026),
+            with <a href="https://jmhbrown.github.io/"
+            target="_blank"
+            rel="noopener noreferrer">Jennifer Brown</a>,
+            <a href="https://webusers.imj-prg.fr/~juan-ramon.gomez-garcia/"
+            target="_blank"
+            rel="noopener noreferrer">Juan Ramón Gómez García</a>, and
+            <a href="https://webhomes.maths.ed.ac.uk/~djordan/"
+            target="_blank"
+            rel="noopener noreferrer">David Jordan</a>.
+        </li>
+                        <li>
+            <a href="https://arxiv.org/abs/2511.19139"
+            target="_blank"
+            rel="noopener noreferrer">
+                The skein partition function of the mapping torus
+            </a> (2025),
+            with <a href="https://juliabierent.org/"
+            target="_blank"
+            rel="noopener noreferrer">Julia Bierent</a>,
+            <a href="https://webhomes.maths.ed.ac.uk/~djordan/"
+            target="_blank"
+            rel="noopener noreferrer">David Jordan</a>, and
+            <a href="https://www.math.ucdavis.edu/~vazirani/"
+            target="_blank"
+            rel="noopener noreferrer">Monica Vazirani</a>.
+            An extended abstract appeared in the proceedings of
+            <a href="https://sites.math.washington.edu/fpsac2026/proceedings/"
+            target="_blank"
+            rel="noopener noreferrer">FPSAC 2026</a>.
+        </li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="publications-heading">
+            <h2 id="publications-heading" class="year-separator">
+                Publications
+            </h2>
+
             <ul class="paper-list">
                 <li>
-                    <b>HOMFLY parabolic restriction, defect skein theory and the Turaev coproduct.</b> <a href="https://arxiv.org/abs/2601.03196">[arXiv:2601.03196]</a>
+                    <a href="https://ems.press/journals/aihpd/articles/14299298"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                        Classification of higher grade ℓ graphs for U(N)<sup>2</sup> × O(D)
+                        multi-matrix models
+                    </a>, with
+                    <a href="https://www.oist.jp/research/research-units/qgqft/remi-avohou"
+                    target="_blank"
+                    rel="noopener noreferrer">Rémi Cocou Avohou</a> and
+                    <a href="https://www.oist.jp/research/research-units/qgqft/members/reiko-toriumi"
+                    target="_blank"
+                    rel="noopener noreferrer">Reiko Toriumi</a>,
+                    <em>Ann. Inst. Henri Poincaré Comb. Phys. Interact.</em>
+                    13 (2026), no. 2, pp. 281–355.
+                    <a href="https://arxiv.org/abs/2403.17822"
+                    target="_blank"
+                    rel="noopener noreferrer">[arXiv:2403.17822]</a>
                 </li>
             </ul>
-            
-            <h3 class="year-separator">Talks</h3>
+        </section>
 
-            <p class="secondary-text"><b>2025-2026</b> <a href="https://btw.pages.math.cnrs.fr/BTW6/btw6.html"> Topology between the Waves</a> - Fréjus</p>
-            <p class="talk-description"> Monoidal, rigid and pivotal categories.</p>
+    </div>
+</main>
 
-            <p class="secondary-text"><b>2025-2026</b> Seminario de Investigación del departamento de Matemática Aplicada</a> - Universidad Politénica de Madrid</p>
-            <p class="talk-description"> Introducción a la teoría skein.</p>
 
-            <p class="secondary-text"><b>2025-2026</b> <a href="https://www.math.uni-hamburg.de/home/runkel/ws25-fose.html"> Research Seminar Algebra and Mathematical Physics</a> - University of Hamburg</p>
-            <p class="talk-description"> Defect skein theory, parabolic restriction and the Turaev coproduct.</p>
 
-            <p class="secondary-text"><b>2025-2026</b> <a href="https://tqft.math.tecnico.ulisboa.pt/seminars?id=7734"> TQFT online seminar</a> - <a href="https://tqft.math.tecnico.ulisboa.pt">Topological Quantum Field Theory Club</a></p>
-            <p class="talk-description"> Defect skein theory, parabolic restriction and the Turaev coproduct.</p>
-            
-            <p class="secondary-text"><b>2024-2025</b> <a href="https://sites.google.com/view/rencontres-doctorants-rtop2025/accueil"> Journées de rencontre des doctorants du Résean Thématique RT2171</a> - Université de Picardie Jules Verne</p>
-            <p class="talk-description"> Skein theory, parabolic restriction and Turaev coproduct.</p>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>
+                    <strong>Contact</strong><br>
+                    <span>matthias.vancraeynest [at] ed.ac.uk</span>
+                </p>
 
-            <p class="secondary-text"><b>2024-2025</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
-            <p class="talk-description"> Morse theory and classification of surfaces.</p>
+                <nav class="profile-links"
+                     aria-label="Academic and professional profiles">
 
-            <p class="secondary-text"><b>2024-2025</b> <a href="https://abrochier.org/jdtq"> Quantum Topology days</a> - Université Bourgogne-Europe</p>
-            <p class="talk-description"> Turaev's coproduct and parabolic restriction.</p>
+                    <a class="orcid-icon"
+                       href="https://orcid.org/0009-0004-9473-6242"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="ORCID profile"
+                       title="ORCID">
+                        <i class="ai ai-orcid" aria-hidden="true"></i>
+                    </a>
 
-            <p class="secondary-text"><b>2024-2025</b> Working group on <a href="https://idrissi.eu/misc/spec"> Balmer Spectrum</a> - Université Paris Cité</p>
-            <p class="talk-description"> Introduction to infinity categories.</p>
-            
-            <p class="secondary-text"><b>2024-2025</b> <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/53"> IMJ-PRG PhD seminar</a> - Sorbonne Université</p>
-            <p class="talk-description"> Skein categories and factorisation homology.</p>
+                    <a class="arxiv-icon"
+                       href="https://arxiv.org/search/math?searchtype=author&query=Vancraeynest%2C+M"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="arXiv publications"
+                       title="arXiv">
+                        <i class="ai ai-arxiv" aria-hidden="true"></i>
+                    </a>
 
-            <p class="secondary-text"><b>2023-2024</b> Annual meeting of the Groups, Geometry, and Representations team at IMJ-PRG - Université Paris Cité</p>
-            <p class="talk-description">Coproduit de Turaev et catégories skein.</p>
+                    <a class="linkedin-icon"
+                       href="https://www.linkedin.com/in/matthias-vancraeynest/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn profile"
+                       title="LinkedIn">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
 
-            <p class="secondary-text"><b>2023-2024</b> Working group on <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/101">Cohomology of Torelli groups</a> - Université Paris Cité</p>
-            <p class="talk-description">Introduction to spectral sequences (<a href="spectral_sequences.pdf">notes</a>).</p>
-
-            <p class="secondary-text"><b>2023-2024</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
-            <p class="talk-description"> Introduction to TQFTs.</p>
-
-            <p class="secondary-text"><b>2022-2023</b> Working group on <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/93">Hecke algebras, categories and braided monoidal 2-categories</a> - Université Paris Cité</p>
-            <p class="talk-description"> Soergel bimodules (<a href="soergel.pdf">notes</a>) and their diagrammatics (<a href="diagrammatics.pdf">slides</a>).</p>
-            
-            <p class="secondary-text"><b>2022-2023</b> <a href="https://www.imj-prg.fr/doctorants/les-bourbakettes/"> Bourbakette</a> (informal PhD seminar) - Université Paris Cité</p>
-            <p class="talk-description"> Quantum invariants of knots.</p>
+                    <a class="scholar-icon"
+                       href="https://scholar.google.com/citations?user=uZK4lh0AAAAJ&hl=nl"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Google Scholar profile"
+                       title="Google Scholar">
+                        <i class="ai ai-google-scholar"
+                           aria-hidden="true"></i>
+                    </a>
+                </nav>
+            </div>
         </div>
     </div>
+</footer>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script data-goatcounter="https://halloweenmatthias.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

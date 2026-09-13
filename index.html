@@ -3,110 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Juan Ramón Gómez García">
-    <link rel="icon" href="https://www.imj-prg.fr/favicon.ico">
-    <title>Juan Ramón Gómez García</title>
-    
+    <meta name="author" content="Matthias Vancraeynest">
+    <title>Matthias Vancraeynest</title>
+    <meta name="description" content="Matthias Vancraeynest is a PhD student in mathematics at the University of Edinburgh, working on quantum topology, quantum algebra and defect skein theory.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Matthias Vancraeynest">
+    <meta property="og:description" content="PhD student in mathematics at the University of Edinburgh, working on quantum topology, quantum algebra and defect skein theory.">
+    <meta property="og:url" content="https://matthiasvancraeynest.github.io/">
+    <meta property="og:image" content="https://matthiasvancraeynest.github.io/foto.jpeg">
+    <meta name="twitter:card" content="summary">
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css">
+
     
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            /* Usamos Lato para un look más moderno y limpio */
-            font-family: 'Lato', sans-serif; 
-            font-size: 16px; 
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        div.page {
-            flex: 1;
-            padding-top: 60px;
-        }
-        /* Estilo para la variable matemática q */
-        var {
-            font-family: "Times New Roman", serif;
-            font-style: italic;
-        }
-        @media (min-width: 768px) { 
-            .container { 
-                width: 768px; 
-            }
-        }
-        h1, h2, h3, h4 { 
-            margin-top: 20px; 
-        }
-        /* Estilos generales de la plantilla original */
-        div.software { margin-left: 5px; }
-        div.software p { margin-left: 10px; }
-        table th { display: none; }
-        table tr:first-child td { border: none; }
-        table td:first-child { font-weight: 700; white-space: nowrap; }
-        img { max-width: 100%; vertical-align: middle; }
-        
-        div.pub-list ol { list-style-type: none; padding-left: 0; }
-        div.pub-list li:before { 
-            counter-increment: pub-counter -1; 
-            content: counter(pub-counter, upper-roman) ". "; 
-            font-weight: 700; 
-            display: inline-block; width: 30px; margin-left: -30px; 
-        }
-        div.pub-list li { padding: 8px; padding-left: 38px; border-top: 1px solid #ddd; }
-        div.pub-list li:first-child { border: none; }
-        
-        ul.post-list { list-style-type: none; padding-left: 10px; }
-        span.date { display: inline-block; width: 85px; }
-        .glyphicon { line-height: inherit; }
-        .label { padding: .3em .6em .1em; }
-        div.two-col ul { columns: 2; }
-        a code { color: inherit; background-color: inherit; padding: 0; }
-        
-        footer {
-            background: #f8f9fa;
-            padding: 20px 0;
-            border-top: 2px solid #ccc;
-        }
-        .main-content p {
-            margin-bottom: 15px; 
-            font-size: 16px; 
-            line-height: 1.6;
-            text-align: justify; /* Mantenemos el justificado que tenías */
-        }
-        
-        /* CORRECCIÓN DE LA IMAGEN DE PERFIL */
-        .profile-pic {
-            max-width: 200px; /* Tamaño controlado */
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 20px auto; /* Centrada horizontalmente */
-            border-radius: 4px; /* Opcional: bordes ligeramente suaves */
-        }
-        
-        .header-text {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        /* Alineación vertical en escritorio para que la foto no quede "colgando" */
-        @media (min-width: 768px) {
-            .row-flex {
-                display: flex;
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background: rgb(242, 202, 100); border: none;">
+    <nav class="navbar navbar-inverse navbar-fixed-top site-navbar"
+     aria-label="Main navigation">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html" style="color: black;"><i class="bi bi-house-door"></i></a>
+                <a class="navbar-brand" href="index.html">Home</a>
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -115,83 +37,124 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="teaching.html" style="color: black;">Teaching</a></li>
-                    <li><a href="research.html" style="color: black;">Research</a></li>
-                    <li><a href="cv.html" style="color: black;">CV</a></li>
-                    <li><a href="other.html" style="color: black;">Beyond Math</a></li>
-                </ul>
+    <li>
+        <a href="research.html">Research</a>
+    </li>
+
+    <li>
+        <a href="talks.html">Talks</a>
+    </li>
+
+    <li>
+        <a href="teaching.html">Teaching</a>
+    </li>
+
+    <li>
+        <a href="cv.html">CV</a>
+    </li>
+
+</ul>
             </div>
         </div>
     </nav>
 
-    <div class="page">
+    <main class="page">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="text-center header-text">
-                        <h3>Juan Ramón Gómez García <span style="font-weight: normal; font-size: 0.8em;">(he/him)</span></h3>
+                        <h1>Matthias Vancraeynest <span style="font-weight: normal; font-size: 0.8em;">(he/him)</span></h1>
                     </div>
                     
                     <div class="row"> <div class="col-sm-4">
-                            <img alt="Juan Ramón Gómez García" src="foto.jpeg" class="profile-pic" />
+                            <img alt="Matthias Vancraeynest" src="foto.jpeg" class="profile-pic" />
                             
                             </div>
                         
                         <div class="col-sm-8 main-content">
                             <p>
-                                Hello! My name is Juan Ramón Gómez García, and I am a PhD student at the <a href="https://www.imj-prg.fr/">IMJ-PRG</a> 
-                                under the supervision of <a href="https://abrochier.org">Adrien Brochier</a> and <a href="https://wagner.perso.math.cnrs.fr/index.html/">Emmanuel Wagner</a>,
-                                within the <a href="https://www.imj-prg.fr/grg/">Groups, Representations and Geometry</a> team.
+                                Hi there! I'm Matthias Vancraeynest, a fourth year PhD student at the University of Edinburgh under the supervision of <a href="https://webhomes.maths.ed.ac.uk/~djordan/" target="_blank" rel="noopener noreferrer">David Jordan</a> and <a href="https://sites.google.com/view/ashapiro" target="_blank" rel="noopener noreferrer">Alexander Shapiro</a>.
+                                I am a member of the <a href="https://maths.ed.ac.uk/research/structure-symmetry" target="_blank" rel="noopener noreferrer">Structure and Symmetry</a> group at the <a href="https://hodge.maths.ed.ac.uk/" target="_blank" rel="noopener noreferrer">Hodge Institute</a>.
                             </p>
                             
                             <p> 
-                                My research focuses on Quantum Topology, with a particular emphasis on skein theory with defects. Currently, I am also investigating categorified quantum link invariants and their connections to <var>q</var>-holonomic systems. If you find any of this interesting, don't hesitate to drop me a line!                            <script type="text/javascript">
-                                </script>
+                                My research focuses on quantum topology and quantum algebra. In particular, I study defect skein theory and its connections to different topics including cluster algebras, weaves, quiver varieties, ...
                             </p>
-                            
-                            <p>I am one of the organizers of the <a href="https://www.imj-prg.fr/gestion/evenement/affEvenement/107">IMJ-PRG Preprint Seminar</a> 
-                                and a member of the <a href="https://www.imj-prg.fr/doctorants/le-bdd">BDD</a>
-                                (feel free to contact me if you are considering doing your thesis at the IMJ-PRG!).
+                            <p>
+                                From September to December 2026, I am taking part in the long program
+                                <a href="https://www.ipam.ucla.edu/programs/long-programs/quantum-topology-character-varieties-and-low-dimensional-geometry/" target="_blank" rel="noopener noreferrer">Quantum Topology, Character Varieties and Low-Dimensional Geometry</a>
+                                at IPAM, UCLA.
                             </p>
+                            <p>
+                              I am currently completing my PhD and am on the job market for positions starting from September 2027.
+
+                            </p>
+
                         </div>
                     </div> </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p><strong>Contact</strong><br>
-                    <address>
-                    E-mail: <script type="text/javascript">
-                    <!--
-                    var tg="<";
-                    var nom="juan-ramon.gomez";
-                    var arob="@";
-                    var hote1="imj";
-                    var hote2="-prg.fr";
-                    document.write(tg+"a hr"+"ef=mai"+"lto:"+nom);
-                    document.write(arob+hote1+hote2+">"+nom+arob+hote1+hote2+tg+"/a>");
-                    -->
-                    </script>
-                    </address>
-                    </p>
-                </div>
-                <div class="col-sm-6">
-                    <p><strong>Address</strong><br>
-                    <address>Bureau 652 - Bâtiment Sophie Germain<br>Université Paris-Cité</address>
-                    </p>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <p>
+                    <strong>Contact</strong><br>
+                    <span>matthias.vancraeynest [at] ed.ac.uk</span>
+                </p>
+
+                <nav class="profile-links"
+                     aria-label="Academic and professional profiles">
+
+                    <a class="orcid-icon"
+                       href="https://orcid.org/0009-0004-9473-6242"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="ORCID profile"
+                       title="ORCID">
+                        <i class="ai ai-orcid" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="arxiv-icon"
+                       href="https://arxiv.org/search/math?searchtype=author&query=Vancraeynest%2C+M"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="arXiv publications"
+                       title="arXiv">
+                        <i class="ai ai-arxiv" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="linkedin-icon"
+                       href="https://www.linkedin.com/in/matthias-vancraeynest/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn profile"
+                       title="LinkedIn">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                    </a>
+
+                    <a class="scholar-icon"
+                       href="https://scholar.google.com/citations?user=uZK4lh0AAAAJ&hl=nl"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Google Scholar profile"
+                       title="Google Scholar">
+                        <i class="ai ai-google-scholar"
+                           aria-hidden="true"></i>
+                    </a>
+                </nav>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script data-goatcounter="https://juanreimon.goatcounter.com/count"
+    <script data-goatcounter="https://halloweenmatthias.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

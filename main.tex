@@ -1,0 +1,211 @@
+%-------------------------------------
+% Resum in LaTeX (XeLaTeX)
+% Author:  HF Yuan
+% Project: https://github.com/xyz-yuanhf/yuan-resume
+% Base on: https://github.com/mattyHerzig/mattys_resume
+%          http://www.jianxu.net/en/
+% License: MIT
+%------------------------------------
+
+\documentclass[a4paper, 10pt]{article}
+\usepackage{myresume}  % Style package
+\usepackage{hyperref}
+\hypersetup{hidelinks}  % clickable links, no coloured boxes around them
+% --------------------  START  --------------------
+\begin{document}
+
+% -------------------- HEADING --------------------
+\begin{flushright}
+  \setstretch{0.6}
+  \item {\Calluna matthias.vancraeynest@ed.ac.uk}  % E-mail address
+\end{flushright}\vspace{-45pt}
+
+\begin{flushleft}  % Rplace here with your name (and identity if required)
+  {\Calluna \fontsize{30pt}{30pt}\selectfont \textsc{Matthias Vancraeynest}} \quad {\Calluna \fontsize{14.5pt}{14.5pt}\selectfont \textsc{}}
+  \noindent\rule{\textwidth}{0.4pt}
+\end{flushleft}
+
+% -------------------- EDUCATION --------------------
+\sectionBlock{
+\section{Education}
+}{
+\eduHeading
+  {Ph.D. in Mathematics}{Edinburgh, Scotland}
+  {University of Edinburgh}{2023 - 2027 \footnotesize{\textit{(expected)}}}
+\itemListStart
+  \myItem{Advisors: Prof. David Jordan and Prof. Alexander Shapiro}
+\itemListEnd
+
+\eduHeading
+  {Master of Mathematics: M2 de Mathématiques Fondamentales}{Paris, France}
+  {Université Paris Cité}{2021-2022}
+\itemListStart
+  \myItem{Thesis: \textit{On the Kashiwara-Vergne Conjecture},\\ advised by Prof. Adrien Brochier}
+\itemListEnd
+
+
+
+\eduHeading
+  {Master of Physics: Theoretical Physics}{Leuven, Belgium}
+  {KU Leuven}{2019-2021}
+\itemListStart
+  \myItem{Thesis: \textit{Holographic backgrounds of low dimension},\\ advised by Prof. Thomas Van Riet}
+  \myItem{Summa cum laude}
+  \myItem{Exchange to the Université de Genève in the Spring semester 2020}
+\itemListEnd
+
+\eduHeading
+  {Bachelor of Mathematics}{Leuven, Belgium}
+  {KU Leuven}{2016-2019}
+\itemListStart
+  \myItem{Minor Physics and Astronomy}
+  \myItem{Magna cum laude}
+\itemListEnd
+
+}
+
+% -------------------- PUBLICATIONS --------------------
+
+
+ \sectionBlock{
+ \section{Publications}
+ }{
+ \pubListStart
+\justifying
+ \item J. Brown, J. R. Gómez García, D. Jordan and M. Vancraeynest, \href{https://arxiv.org/abs/2609.09308}{\textit{Weyl defects in skein theory and quantum cluster charts}}, (preprint). ArXiv 2609.09308 (2026)
+ \item J. Bierent, D. Jordan, M. Vancraeynest and M. Vazirani, \href{https://arxiv.org/abs/2511.19139}{\textit{The skein partition function of the mapping torus}}, (preprint). ArXiv 2511.19139 (2025). An extended abstract appeared in the proceedings of \href{https://sites.math.washington.edu/fpsac2026/proceedings/}{FPSAC 2026}.
+ \item R. C. Avohou, R. Toriumi and M. Vancraeynest,  \href{https://ems.press/journals/aihpd/articles/14299298}{\textit{Classification of higher grade ℓ graphs for $U(N)^2 \times O(D)$ multi-matrix models}}, Annales de l’Institut Henri Poincaré D, Combinatorics, Physics and their Interactions \textbf{13} (2026), no. 2, pp. 281--355. DOI: 10.4171/aihpd/217.
+ 
+ 
+
+ \pubListEnd
+ }
+ 
+%-------TALKS----------
+\sectionBlock{
+\section{Talks}
+}{
+\hspace{2mm}Hodge Club, \textit{University of Edinburgh} \hfill Feb 2026\\
+\hspace{2mm}Quantum Universe Attract.Workshop, \textit{University of Hamburg} \hfill Nov 2025\\
+\hspace{2mm}GEARS seminar, \textit{Heriot-Watt University} \hfill Sep 2025\\
+\hspace{2mm}MIGS Student conference, \textit{University of Edinburgh} \hfill Mar 2025\\
+\hspace{2mm}GRIFT seminar, \textit{University of Edinburgh} \hfill Nov 2024\\
+\hspace{2mm}Hodge Club, \textit{University of Edinburgh} \hfill Oct 2024\\
+\hspace{2mm}SMSTC Hopf Algebras, \textit{University of Glasgow} \hfill Mar 2024\\
+\hspace{2mm}GlaMS example showcase, \textit{University of Glasgow} \hfill Dec 2023\\
+
+
+
+
+
+}
+
+
+
+%-------POSTERS----------
+\sectionBlock{
+\section{Posters}
+}{
+\hspace{2mm}New perspectives on skein modules, \textit{CIRM, Luminy}, with J. Bierent \hfill Jul 2025\\
+
+}
+
+% -------------------- EXPERIENCE --------------------
+\sectionBlock{
+\section{Experience}
+}{
+\eduHeading
+  {Educational developer}{Brussels, Belgium}
+  {Vrije Universiteit Brussel}{Feb - May 2023}
+\itemListStart
+  \myItem{Student support service}
+\itemListEnd
+
+\eduHeading
+  {Research intern}{Okinawa, Japan}
+  {Okinawa Institute of Science and Technology}{Oct 2022 - Jan 2023}
+\itemListStart
+  \myItem{Gravity, Quantum Geometry and Field Theory Unit}
+  \myItem{Advisor: Prof. Reiko Toriumi}
+\itemListEnd
+
+}
+
+% -------------------- RESEARCH VISITS AND PROGRAMS --------------------
+\sectionBlock{
+\section{Research\\visits}
+}{
+\eduHeading
+  {Institute for Pure and Applied Mathematics (IPAM), UCLA}{Los Angeles, USA}
+  {\textit{Quantum Topology, Character Varieties and Low-Dimensional Geometry}}{Sep - Dec 2026}
+
+}
+
+% -------------------- TEACHING --------------------
+\sectionBlock{
+\section{Teaching}
+}{
+
+\hspace{2mm}{\fontsize{11pt}{13pt}\selectfont\textbf{University of Edinburgh}}\\
+\vspace{2mm}
+\hspace{2mm}Introduction to Mathematical Analysis, Tutorials \hfill Spring 2026\\
+\hspace{2mm}Mathsbase, Drop-in sessions \hfill Spring 2026\\
+\vspace{2mm}
+\hspace{2mm}Geometry, Tutorials \hfill Autumn 2025\\
+\hspace{2mm}Mathsbase, Drop-in sessions \hfill Autumn 2025\\
+\vspace{2mm}
+\hspace{2mm}Introduction to Number Theory, Tutorials \hfill Spring 2025\\
+\hspace{2mm}Fundamentals of Pure Mathematics, Tutorials \hfill Spring 2025\\
+\hspace{2mm}Mathsbase, Drop-in sessions \hfill Spring 2025\\
+\vspace{2mm}
+\hspace{2mm}Introduction to Linear Algebra, Tutorials \hfill Autumn 2024\\
+
+
+}
+
+
+% % -------------------- AWARDS & HONORS --------------------
+% \sectionBlock{
+% \section{Awards\\and\\Honors}
+% }{
+% \awardListStart
+% \justifying
+% \item \emph{First Prize}, International Data Science Challenge \hfill 2023.11
+% \item \emph{Best Innovation Award}, Tech Startup Pitch Competition \hfill 2023.05
+% \item \emph{Excellence in Research Award}, Annual Research Symposium, \hfill 2022.12
+% \item \emph{Academic Scholarship}, Tsinghua University \hfill 2022.09
+% \awardListEnd
+% }
+
+% -------------------- SKILLS --------------------
+\sectionBlock{
+\section{Skills}
+}{
+\skillListStart
+\justifying
+\item \hspace{1mm}\emph{Languages}: Dutch, English, French.
+\item \hspace{1mm}\emph{Programming}: {\Courier \fontsize{11pt}{11pt}\selectfont Python}, {\Courier \fontsize{11pt}{11pt}\selectfont MATLAB}, {\Courier \fontsize{11pt}{11pt}\selectfont R}.
+\skillListEnd
+}
+
+\sectionBlock{
+\section{Organisation}
+}{\hspace{2mm}{\fontsize{11pt}{13pt}\selectfont\textbf{University of Edinburgh}}\\ \vspace{1mm}
+\hspace{2mm}Hodge Club, Postgraduate seminar \hfill 2024-2025\\
+
+}
+
+% % -------------------- OTHERS --------------------
+% \sectionBlock{
+% \section{Academic Services}
+% }{
+% \skillListStart
+% \justifying
+% \item \emph{Reviewers for}: \textit{Journal of Operations Research and Optimization},
+% \item \phantom{\emph{Reviewers for}:} \textit{International Conference on Optimization and Machine Learning},
+% \item \phantom{\emph{Reviewers for}:} \;...
+% \skillListEnd
+% }
+
+\end{document}
+
